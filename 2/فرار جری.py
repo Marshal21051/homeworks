@@ -1,6 +1,7 @@
 col = int(input())
 l = ["*"]
-for _ in range(col - 1): l.append(".")
+for _ in range(col - 1):
+    l.append(".")
 colNow = 0
 ch = input()
 
@@ -9,7 +10,8 @@ while ch != "END":
         for k in l:
             print(k, end=" ")
         print()
-        for i in range(len(l)): l[i] = "."
+        for i in range(len(l)):
+            l[i] = "."
         l[colNow] = "*"
 
     elif ch == "R" and colNow + 1 < col:
@@ -25,4 +27,5 @@ while ch != "END":
 for k in l:
     print(k, end=" ")
 
-if colNow + 1 != col: print("\nThere's no way out!")
+if colNow + 1 != col:
+    print("\nThere's no way out!")
