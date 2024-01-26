@@ -33,7 +33,7 @@ dt1 = np.linalg.det(my_dict[int(first) - 1])
 dt2 = np.linalg.det(my_dict[int(second) - 1])
 
 if dt1 > dt2:
-    res = np.matmul(my_dict[int(first) - 1], my_dict[int(second)- 1])
+    res = np.matmul(my_dict[int(first) - 1], my_dict[int(second) - 1])
 else:
     res = np.matmul(my_dict[int(first) - 1], my_dict[int(second) - 1])
 
